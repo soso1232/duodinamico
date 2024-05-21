@@ -30,4 +30,4 @@ function completeTask(task) {
   var completedTasks = document.getElementById('completed-tasks');
   task.removeChild(task.querySelector('.complete-button')); // Remover el botón de completado
   completedTasks.appendChild(task);
-}
+} 
