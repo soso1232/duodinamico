@@ -1,75 +1,156 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
+  font-family: 'Arial Black', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url('fucho.jpg');
+  background-size: cover;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Agregado */
+#custom-background {
+  background-image: url('fondo.jpeg'); 
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
   }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+  to {
+      opacity: 1;
   }
-  
-  .container {
-    width: 80%;
-    margin: auto;
+}
+
+.header-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 48px;
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-50px);
+      opacity: 0;
   }
-  
-  .tasks {
-    width: 80%;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  to {
+      transform: translateY(0);
+      opacity: 1;
   }
-  
-  h1, h2 {
-    text-align: center;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  form {
-    margin-top: 20px;
-    display: flex;
-  }
-  
-  input[type="text"] {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #555;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  animation: slideIn 1s ease-in-out;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #4CAF50;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease-in-out;
+}
+
+.task-input {
+  margin-bottom: 20px;
+  animation: slideIn 1s ease-in-out;
+}
+
+.task-input input {
+  padding: 10px;
+  width: calc(70% - 10px);
+  border: none;
+  border-bottom: 2px solid #4CAF50;
+  border-radius: 0;
+  font-size: 16px;
+}
+
+.task-input button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.task-input button:hover {
+  background-color: #45a049;
+}
+
+h2 {
+  color: #4CAF50;
+  font-size: 32px;
+  margin-top: 30px;
+  animation: slideIn 1s ease-in-out;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Estilos para el botón de completado */
+.complete-button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.complete-button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para los botones de agregar enlace */
+.link-input button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px; /* Espacio adicional entre los botones */
+  transition: background-color 0.3s ease;
+}
+
+.link-input button:hover {
+  background-color: #45a049;
+}
